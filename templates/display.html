@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block title %}View All Logs{% endblock %}
+{% block content %}
+    {% for item in values %}
+        <p>ID: {{item._id}}, Content: {{item.content}}</p>
+    { % endfor %}
+{% endblock %}
